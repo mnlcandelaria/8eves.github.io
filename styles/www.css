@@ -1,4 +1,21 @@
 html, body {
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-light-pink {
+    background: #E29291;
+}
+
+nav.bg-light {
+    background: #FFFFFF !important;
+}
+
+.top-header a {
+    color: #000000;
 }
