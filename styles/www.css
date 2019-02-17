@@ -8,12 +8,16 @@ html, body {
     width: 100%;
 }
 
-.bg-light-pink {
-    background: #E29291;
+.top-bg-light {
+    background: #EAEAEA;
 }
 
 nav.bg-light {
     background: #FFFFFF !important;
+}
+
+.top-header ul {
+    margin-bottom: 0;
 }
 
 .top-header a {
