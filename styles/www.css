@@ -1,13 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     background-color: #FFFFFF;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
     font-weight: 400;
     height: 100%;
     width: 100%;
 }
 
+body {
+    font-size: 1.4rem;
+}
+
+/* Global CSS */
+.parallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #e29291;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courgette', cursive;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+/* Header */
 .top-bg-light {
     background: #EAEAEA;
 }
@@ -22,4 +70,78 @@ nav.bg-light {
 
 .top-header a {
     color: #000000;
+}
+
+header .navbar > .container {
+    position: relative;
+}
+
+header .navbar > .container a.navbar-brand.logo-big {
+    background: #FFFFFF;
+    padding: .8rem 2rem;
+    position: absolute;
+    top: 0;
+}
+
+header .navbar > .container a.navbar-brand img {
+    width: 8rem;
+}
+
+header .navbar > .container a.navbar-brand.logo-big img {
+    width: 15rem;
+}
+
+header.header-fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* BANNER */
+.banner {
+    background-image: url(../images/banner-1.png);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.banner h2 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 4rem;
+    padding-top: 10rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.banner-1 {
+    background-image: url(../images/banner-1.png);
+}
+
+.banner-2 {
+    background-image: url(../images/banner-2.png);
+}
+
+.banner-3 {
+    background-image: url(../images/banner-3.png);
+}
+
+.banner-4 {
+    background-image: url(../images/banner-4.png);
+}
+
+/* ABOUT US */
+.about-us {
+    padding: 5rem;
+}
+
+.about-us h3 {
+    color: #E29291;
+    margin-bottom: 3rem;
+}
+
+.about-us p {
+    font-size: 1.8rem;
 }
