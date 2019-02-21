@@ -1,4 +1,6 @@
 jQuery(function($) {
+     AOS.init();
+     
     $('.scroll-to').click(function(e) {
         var jump = $(this).attr('href');
         var position = $(jump).offset().top;
