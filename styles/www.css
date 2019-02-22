@@ -21,7 +21,6 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
 }
 
 .pace {
@@ -53,6 +52,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
     font-size: 3rem;
+}
+
+.d-flex .flex-fill {
+    width: 100%;
+}
+
+.text-pink {
+    color: #E29291;
 }
 
 /* Header */
@@ -93,6 +100,7 @@ header .navbar > .container a.navbar-brand.logo-big img {
 }
 
 header.header-fixed {
+    border-bottom: 1px solid #E29291;
     left: 0;
     position: fixed;
     right: 0;
@@ -105,6 +113,7 @@ header.header-fixed {
     background-image: url(../images/banner-1.png);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    height: 600px;
 }
 
 .banner h2 {
@@ -135,16 +144,58 @@ header.header-fixed {
 
 /* ABOUT US */
 .about-us {
-    padding: 5rem;
+    padding: 6rem 0;
+    text-align: center;
 }
 
 .about-us h3 {
-    color: #E29291;
+    font-size: 3em;
     margin-bottom: 3rem;
 }
 
 .about-us p {
+    margin-bottom: 4rem;
     font-size: 1.8rem;
+}
+
+/* Motto */
+.motto-mantra {
+    background-image: url(../images/photoshoot.png);
+    padding: 8rem 0 5rem;
+}
+
+.motto-mantra .d-flex {
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+}
+
+.motto-mantra .d-flex .flex-fill:first-child {
+    margin-right: 2rem;
+}
+
+.motto-mantra p {
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.motto-mantra h3 {
+    background-color: rgba(0,0,0, 0.5);
+    display: inline-block;
+    padding: 1rem;
+}
+
+/* Core & Certificates */
+.core-certificates {
+    padding: 5rem 0;
+}
+
+.core-certificates h3 {
+    margin-bottom: 5rem;
+}
+
+.core-certificates .d-flex .flex-fill:first-child {
+    margin-right: 5rem;
 }
 
 /* Footer */
