@@ -62,6 +62,10 @@ h3 {
     color: #E29291;
 }
 
+.text-white {
+    color: #FFFFFF;
+}
+
 /* Header */
 .top-bg-light {
     background: #EAEAEA;
@@ -142,6 +146,10 @@ header.header-fixed {
     background-image: url(../images/banner-4.png);
 }
 
+.banner-4 {
+    background-image: url(../images/banner-5.png);
+}
+
 /* ABOUT US */
 .about-us {
     padding: 6rem 0;
@@ -196,6 +204,63 @@ header.header-fixed {
 
 .core-certificates .d-flex .flex-fill:first-child {
     margin-right: 5rem;
+}
+
+/* Packages */
+.packages {
+    background-image: url(../images/packages.png);
+    padding: 8rem;
+}
+
+.packages .container {
+    width: 990px;
+}
+
+.packages h3 {
+    font-size: 5rem;
+}
+
+.packages .packages-list {
+    padding: 5rem 0;
+}
+
+.packages .packages-list .d-flex:first-child {
+    margin-bottom: 2rem;
+}
+
+.packages .packages-list .flex-fill {
+    border-radius: 3rem;
+    background:rgba(226, 146, 145, 0.8);
+    padding: 1rem;
+}
+
+.packages .packages-list .flex-fill a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.packages .packages-list .flex-fill:hover {
+    background:rgba(255, 255, 255, 0.8);
+}
+
+.packages .packages-list .flex-fill:hover a {
+    color: #E29291;
+}
+
+.packages .packages-list .flex-fill a:hover {
+    text-decoration: none;
+}
+
+.packages .packages-list .flex-fill:not(:last-child) {
+    margin-right: 2rem;
+}
+
+/* Contact Us */
+.contact-us {
+    padding: 5rem 0;
 }
 
 /* Footer */

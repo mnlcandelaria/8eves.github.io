@@ -1,6 +1,6 @@
 jQuery(function($) {
      AOS.init();
-     
+
     $('.scroll-to').click(function(e) {
         var jump = $(this).attr('href');
         var position = $(jump).offset().top;
@@ -37,6 +37,6 @@ jQuery(function($) {
 	});
 
     // random banner
-    var banner = Math.floor(Math.random() * 4) + 1;
+    var banner = Math.floor(Math.random() * 5) + 1;
     $('.banner').addClass('banner-' + banner);
 });
