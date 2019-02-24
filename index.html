@@ -18,7 +18,7 @@
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles/www.css?v=1">
+        <link rel="stylesheet" href="styles/www.css?v=2">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="text/javascript" src="scripts/www.js"></script>
 
-        <title>8 Eves | Your vision is our mission. Dream and we'll help you make it happen.</title>
+        <title>8 EVEs | Your vision is our mission. Dream and we'll help you make it happen.</title>
     </head>
     <body>
         <header>
@@ -61,7 +61,7 @@
                                 <a class="nav-link scroll-to" href="#packages">PACKAGES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT US</a>
+                                <a class="nav-link" href="#contact-us">CONTACT US</a>
                             </li>
                         </ul>
                     </div>
@@ -187,24 +187,24 @@
             <!-- START: Packages -->
             <div class="packages parallax" id="packages">
                 <div class="container">
-                    <h3 class="text-center text-white">Packages</h3>
-                    <div class="text-center text-white">
+                    <h3 data-aos="fade-up" class="text-center text-white">Packages</h3>
+                    <div class="text-center text-white" data-aos="zoom-out-up">
                         Price may change without prior notice.
                     </div>
                     <div class="packages-list">
                         <div class="d-flex">
-                            <div class="flex-fill">
+                            <div class="flex-fill" data-aos="zoom-in-left">
                                 <a href="files/GOLDEN SUNSET PACKAGE.docx"><i class="fas fa-download"></i> DOWNLOAD GOLDEN SUNSET</a>
                             </div>
-                            <div class="flex-fill">
+                            <div class="flex-fill" data-aos="zoom-in-left">
                                 <a href="files/RED VELVET PACKAGE.docx"><i class="fas fa-download"></i> DOWNLOAD RED VELVET</a>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div class="flex-fill">
+                            <div class="flex-fill" data-aos="zoom-in-right">
                                 <a href="files/FIERY RED PACKAGE.docx"><i class="fas fa-download"></i> DOWNLOAD FIERY RED</a>
                             </div>
-                            <div class="flex-fill">
+                            <div class="flex-fill" data-aos="zoom-in-right">
                                 <a href="files/DIAMOND PACKAGE.docx"><i class="fas fa-download"></i> DOWNLOAD DIAMOND</a>
                             </div>
                         </div>
@@ -214,15 +214,56 @@
             <!-- END: Packages -->
 
             <!-- START: Contact us -->
-            <div class="contact-us">
+            <div class="contact-us" id="contact-us">
                 <div class="container">
-                    <h3 class="text-center text-pink">Contact us</h3>
+                    <h3 data-aos="fade-up" class="text-center text-pink">Contact us</h3>
+                    <form name="form-contact" data-aos="flip-up" action="https://docs.google.com/forms/d/e/1FAIpQLSf8OCbGVh2CsW-tEB1Ichkc7DrIBQFztAJ6EhI6FpTjzOhP-g/formResponse">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input id="inputFullName" name="entry.625377035" type="text" class="form-control" placeholder="Full Name">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input id="inputEmail" name="entry.1454836199" type="email" class="form-control" placeholder="Email">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Number</label>
+                            <input id="inputContact" name="entry.922231312" type="text" class="form-control" placeholder="Contact Number">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="textareaMessage" class="form-control" name="entry.630116413" rows="3" placeholder="Message"></textarea>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <br/>
+                        <button type="button" id="btnSubmit" class="btn btn-pink">Submit</button>
+                    </form>
                 </div>
             </div>
             <!-- END: Contact us -->
         </div>
         <footer>
-            <h1>8eves</h1>
+            <div class="footer-top text-center">
+                <h1>
+                    <img src="images/logo.jpg" width="100">
+                </h1>
+                <div class="text-muted">8evesevents@gmail.com</div>
+
+                <ul>
+                    <li><a class="scroll-to" href="#home">HOME</a></li>
+                    <li><a class="scroll-to" href="#about-us">ABOUT US</a></li>
+                    <li><a class="scroll-to" href="#packages">PACKAGES</a></li>
+                    <li><a class="scroll-to" href="#contact-us">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    Copyright © 8 EVEs 2019
+                </div>
+            </div>
         </footer>
     </body>
 </html>

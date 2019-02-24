@@ -1,7 +1,3 @@
-html {
-    font-size: 62.5%;
-}
-
 html, body {
     background-color: #FFFFFF;
     color: #000000;
@@ -12,7 +8,7 @@ html, body {
 }
 
 body {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /* Global CSS */
@@ -51,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .d-flex .flex-fill {
@@ -63,6 +59,12 @@ h3 {
 }
 
 .text-white {
+    color: #FFFFFF;
+}
+
+.btn-pink {
+    border-color: 1px solid #E29291;
+    background: #E29291;
     color: #FFFFFF;
 }
 
@@ -89,18 +91,18 @@ header .navbar > .container {
 
 header .navbar > .container a.navbar-brand.logo-big {
     background: #FFFFFF;
-    padding: .8rem 2rem;
+    padding: 0.8rem 1.3rem;
     position: absolute;
     top: 0;
     z-index: 1;
 }
 
 header .navbar > .container a.navbar-brand img {
-    width: 8rem;
+    width: 5rem;
 }
 
 header .navbar > .container a.navbar-brand.logo-big img {
-    width: 15rem;
+    width: 10rem;
 }
 
 header.header-fixed {
@@ -110,6 +112,10 @@ header.header-fixed {
     right: 0;
     top: 0;
     z-index: 1;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    font-size: .8rem;
 }
 
 /* BANNER */
@@ -122,11 +128,11 @@ header.header-fixed {
 
 .banner h2 {
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.1em;
-    line-height: 4rem;
-    padding-top: 10rem;
+    line-height: 3rem;
+    padding-top: 8rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -152,7 +158,7 @@ header.header-fixed {
 
 /* ABOUT US */
 .about-us {
-    padding: 6rem 0;
+    padding: 4rem 0;
     text-align: center;
 }
 
@@ -162,23 +168,23 @@ header.header-fixed {
 }
 
 .about-us p {
-    margin-bottom: 4rem;
-    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 /* Motto */
 .motto-mantra {
     background-image: url(../images/photoshoot.png);
-    padding: 8rem 0 5rem;
+    padding: 6rem 0 3rem;
 }
 
 .motto-mantra .d-flex {
-    margin-bottom: 5rem;
-    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
 }
 
 .motto-mantra .d-flex .flex-fill:first-child {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .motto-mantra p {
@@ -195,33 +201,35 @@ header.header-fixed {
 
 /* Core & Certificates */
 .core-certificates {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .core-certificates h3 {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .core-certificates .d-flex .flex-fill:first-child {
-    margin-right: 5rem;
+    margin-right: 4rem;
 }
 
 /* Packages */
 .packages {
     background-image: url(../images/packages.png);
-    padding: 8rem;
+    padding: 6rem 0;
 }
 
 .packages .container {
-    width: 990px;
+    width: 70%;
 }
 
 .packages h3 {
-    font-size: 5rem;
+    background: rgba(0,0,0,0.5);
+    font-size: 3rem;
+    padding: .5rem 1rem;
 }
 
 .packages .packages-list {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .packages .packages-list .d-flex:first-child {
@@ -229,21 +237,21 @@ header.header-fixed {
 }
 
 .packages .packages-list .flex-fill {
-    border-radius: 3rem;
-    background:rgba(226, 146, 145, 0.8);
-    padding: 1rem;
+    border-radius: 2rem;
+    background:rgba(226, 146, 145, 0.9);
+    padding: .8rem 1rem;
 }
 
 .packages .packages-list .flex-fill a {
     color: #FFFFFF;
     display: block;
     font-weight: 600;
-    padding: 1rem;
+    padding: .5rem 1rem;
     text-align: center;
 }
 
 .packages .packages-list .flex-fill:hover {
-    background:rgba(255, 255, 255, 0.8);
+    background:rgba(255, 255, 255, 1);
 }
 
 .packages .packages-list .flex-fill:hover a {
@@ -260,10 +268,164 @@ header.header-fixed {
 
 /* Contact Us */
 .contact-us {
-    padding: 5rem 0;
+    padding: 5rem 0 3rem;
+}
+
+.contact-us .container {
+    width: 40%;
+}
+
+.contact-us h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-us form .btn {
+    border-radius: 100px;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.contact-us form .btn:hover {
+    color: #ECDBDB;
 }
 
 /* Footer */
-footer {
-    padding: 5rem 0;
+footer .footer-top {
+    border-top: 1px solid #E29291;
+    padding: 2rem 0;
+}
+
+footer .footer-top ul {
+    margin: 2rem 0;
+    padding: 0;
+}
+
+footer .footer-top ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+footer .footer-top ul li a {
+    color: #E29291;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    position: relative;
+}
+
+footer .footer-top ul li a:before {
+    color: #E29291;
+    content: '\f111';
+    font-family: 'Font Awesome 5 Free';
+    font-size: .3rem;
+    font-weight: 900;
+    left: 0;
+    margin-left: -5px;
+    position: absolute;
+    top: 11px;
+}
+
+footer .footer-top ul li:first-child a:before {
+    content: '';
+}
+
+footer .footer-bottom .copyright {
+    background: #333333;
+    color: #FFFFFF;
+    font-size: .8rem;
+    padding: .8rem 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 990px) {
+    header .navbar > .container a.navbar-brand.logo-big {
+        position: initial;
+    }
+
+    header .navbar > .container a.navbar-brand.logo-big img {
+        width: 5rem !important;
+    }
+
+    header .navbar > .container a.navbar-brand {
+        padding-bottom: .3125rem !important;
+        padding-top: .3125rem !important;
+    }
+
+    .contact-us .container {
+        width: 70%;
+    }
+
+    .packages .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner h2 {
+        padding-top: 2rem;
+    }
+
+    .about-us {
+        padding: 4rem 2rem;
+    }
+
+    .motto-mantra .d-flex {
+        display: block !important;
+    }
+
+    .motto-mantra .d-flex .flex-fill {
+        margin-bottom: 2rem;
+    }
+
+    .core-certificates .d-flex {
+        display: block !important;
+    }
+
+    .core-certificates .d-flex .flex-fill {
+        margin-bottom: 2rem;
+    }
+
+    .core-certificates h3 {
+        margin-bottom: 0rem;
+        padding: 2rem 0 4rem;
+    }
+
+    .contact-us .container {
+        width: 90%;
+    }
+
+    .packages {
+        padding: 6rem 0 1rem;
+    }
+
+    .packages .container {
+        width: 100%;
+    }
+
+    .packages .packages-list .flex-fill a {
+        font-size: .8rem;
+        padding: .2rem 1rem;
+    }
+
+    .packages .packages-list .d-flex {
+        display: block !important;
+    }
+
+    .packages .packages-list .d-flex .flex-fill {
+        margin-bottom: 2rem;
+    }
+
+    footer .footer-top ul li {
+        display: block;
+    }
+
+    footer .footer-top ul li a:before {
+        content: '';
+    }
+
+    footer .footer-top ul li a {
+        font-size: 1rem;
+    }
 }
