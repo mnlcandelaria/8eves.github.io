@@ -19,6 +19,10 @@ body {
     background-size: cover;
 }
 
+.hidden {
+    display: none;
+}
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
