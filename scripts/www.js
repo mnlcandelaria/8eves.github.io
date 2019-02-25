@@ -40,7 +40,7 @@ jQuery(function($) {
     var banner = Math.floor(Math.random() * 5) + 1;
     $('.banner').addClass('banner-' + banner);
 
-    // call fuction for form inquiry
+    // call fuction for form contact
     formContact();
 });
 

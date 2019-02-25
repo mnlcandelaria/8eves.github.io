@@ -266,6 +266,13 @@ header .navbar-light .navbar-nav .nav-link {
     margin-right: 2rem;
 }
 
+.packages .catering-menu a {
+    background: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+
 /* Contact Us */
 .contact-us {
     padding: 5rem 0 3rem;
@@ -417,6 +424,10 @@ footer .mailto a {
     }
 
     .packages .packages-list .d-flex .flex-fill {
+        margin-bottom: 2rem;
+    }
+
+    .packages .catering-menu a {
         margin-bottom: 2rem;
     }
 
