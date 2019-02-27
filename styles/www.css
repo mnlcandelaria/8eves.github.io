@@ -353,6 +353,20 @@ footer .footer-top ul li a:before {
     top: 11px;
 }
 
+footer .footer-top ul.socials {
+    margin-top: 0;
+}
+
+footer .footer-top ul.socials li a {
+    color: #999999;
+    font-size: 1rem;
+    padding: .3rem;
+}
+
+footer .footer-top ul.socials li a:before {
+    content: '';
+}
+
 footer .footer-top ul li:first-child a:before {
     content: '';
 }
