@@ -89,6 +89,18 @@ nav.bg-light {
     color: #000000;
 }
 
+header .top-header ul li {
+    display: inline-block;
+}
+
+header .top-header ul li a {
+    padding: 0 .5rem;
+}
+
+header .top-header ul li a:hover {
+    color: #E29291;
+}
+
 header .navbar > .container {
     position: relative;
 }
@@ -299,6 +311,10 @@ header .navbar-light .navbar-nav .nav-link {
 
 .contact-us form .btn:hover {
     color: #ECDBDB;
+}
+
+.contact-us .recaptcha-field.is-invalid .invalid-feedback {
+    display: block;
 }
 
 /* Footer */

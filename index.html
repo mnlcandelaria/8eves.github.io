@@ -18,7 +18,7 @@
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles/www.css?v=6">
+        <link rel="stylesheet" href="styles/www.css?v=7">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -26,6 +26,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="text/javascript" src="scripts/www.js"></script>
+
+        <!-- RECAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
         <title>8 EVEs | Your vision is our mission. Dream and we'll help you make it happen.</title>
     </head>
@@ -37,7 +40,15 @@
                         <li>
                             <a href="https://www.facebook.com/8EVEs/" target="_blank">
                                 <i class="fab fa-facebook"></i></a>
-                            </li>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/8EVEs/" target="_blank">
+                                <i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/8.eves/" title="@8.eves" target="_blank">
+                                <i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -240,6 +251,10 @@
                         <div class="form-group">
                             <label>Message</label>
                             <textarea id="textareaMessage" class="form-control" name="entry.630116413" rows="3" placeholder="Message"></textarea>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group recaptcha-field">
+                            <div id="googleRecaptcha"></div>
                             <div class="invalid-feedback"></div>
                         </div>
                         <br/>

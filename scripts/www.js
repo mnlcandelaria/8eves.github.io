@@ -1,3 +1,11 @@
+var googleRecaptcha;
+
+var onloadCallback = function() {
+   googleRecaptcha = grecaptcha.render('googleRecaptcha', {
+     'sitekey' : '6LeTWpQUAAAAAAFXyxeG74AZeUCLIpOXhIxzfZg8'
+   });
+ };
+
 jQuery(function($) {
      AOS.init();
 
@@ -100,6 +108,16 @@ function formContact() {
                 .parent()
                 .find('.invalid-feedback')
                 .text('Message is required.');
+
+            hasError = true;
+        }
+
+        var recaptcha = grecaptcha.getResponse(googleRecaptcha);
+        if(recaptcha.length == 0) {
+            $('.recaptcha-field')
+                .addClass('is-invalid')
+                .find('.invalid-feedback')
+                .text('Captcha Failed');
 
             hasError = true;
         }
