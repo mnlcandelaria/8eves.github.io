@@ -59,6 +59,7 @@ function formContact() {
         $('form[name="form-contact"] input').removeClass('is-invalid');
         $('form[name="form-contact"] textarea').removeClass('is-invalid');
         $('form[name="form-contact"]').find('.alert').remove();
+        $('.recaptcha-field').removeClass('is-invalid');
 
         if (!$('#inputFullName').val() || $('#inputFullName').val().trim() === '') {
             $('#inputFullName')
