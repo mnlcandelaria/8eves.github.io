@@ -289,6 +289,59 @@ header .navbar-light .navbar-nav .nav-link {
     padding: .5rem 1rem;
 }
 
+/* Galleries */
+.gallery {
+    padding: 3rem 0 1rem;
+}
+
+.gallery .container {
+    position: relative;
+}
+
+.gallery .container .all-albums {
+    color: #999999;
+    font-size: .825rem;
+    position: absolute;
+    right: 16px;
+    text-decoration: underline;
+    top: 0;
+}
+
+.gallery .container .all-albums:hover {
+    text-decoration: none;
+}
+
+.gallery h3 {
+    padding-bottom: 1rem;
+}
+
+.gallery .carousel-item img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.gallery .carousel-item:hover img {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+
+.gallery .carousel-item .carousel-caption {
+    background: rgba(0,0,0,.3);
+    padding: 1rem 0;
+}
+
+.gallery .carousel-item .carousel-caption > a {
+    color: #FFFFFF;
+    font-family: 'Courgette', cursive;
+    font-size: 1.5rem;
+}
+
+.gallery .carousel-control-next-icon,
+.gallery .carousel-control-prev-icon {
+    height: 30px;
+    width: 30px;
+}
+
 /* Contact Us */
 .contact-us {
     padding: 5rem 0 3rem;
